@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@next/font": "13.0.7",
     "@types/node": "18.11.15",
     "@types/react": "18.0.26",
@@ -19,5 +20,18 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-regular-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@nextui-org/react": "^1.0.0-beta.10",
+    "@reduxjs/toolkit": "^1.9.1",
+    "autoprefixer": "^10.4.13",
+    "axios": "^1.2.1",
+    "next-redux-wrapper": "^8.0.0",
+    "postcss": "^8.4.20",
+    "react-redux": "^8.0.5",
+    "tailwindcss": "^3.2.4"
   }
 }
