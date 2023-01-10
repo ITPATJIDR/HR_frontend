@@ -3,8 +3,7 @@ import { ModalPage } from "../Types";
 import { Modal, Text } from "@nextui-org/react";
 
 
-const ModalMain: FunctionComponent<ModalPage> = ({ body, footer, trigger, handleClose, nameFirst, nameLast }) => {
-
+const ModalMain: FunctionComponent<ModalPage> = ({ body, footer, trigger, handleClose, nameFirst, nameLast,width }) => {
   return (
     <div>
       <Modal
@@ -12,6 +11,7 @@ const ModalMain: FunctionComponent<ModalPage> = ({ body, footer, trigger, handle
         blur 
         open={trigger}
         onClose={handleClose}
+        width={width}
       >
         <Modal.Header>
           <Text size={18}>

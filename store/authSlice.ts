@@ -37,6 +37,28 @@ export const checkLogin = async () => {
   .catch(err => err)
 }
 
+export const getUser = async () => {
+  return await axios.get(`http://localhost:5000/user/getUser`,{
+    withCredentials: true,
+    headers: {
+      "Access-Control-Allow-Origin": "http://localhost:5000",
+    }
+  })
+  .then(res => res)
+  .catch(err => err)
+}
+
+export const logOut = async () =>{
+  return await axios.get(`http://localhost:5000/user/logout`,{
+    withCredentials: true,
+    headers: {
+      "Access-Control-Allow-Origin": "http://localhost:5000",
+    }
+  })
+  .then(res => res)
+  .catch(err => err)
+}
+
 // Actual Slice
 export const authSlice = createSlice({
   name: "auth",

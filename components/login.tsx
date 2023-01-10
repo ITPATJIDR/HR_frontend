@@ -1,5 +1,5 @@
 import { NextPage } from "next"
-import { Button, Input, Grid, Container, Row, Col, Card, Text, Spacer } from '@nextui-org/react';
+import { Button, Input, Container, Row, Col, Card, Text, Spacer } from '@nextui-org/react';
 import { setAuthState, selectAuthState, authAction } from "../store/authSlice";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux"
